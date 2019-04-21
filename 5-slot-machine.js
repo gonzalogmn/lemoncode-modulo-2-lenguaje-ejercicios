@@ -7,15 +7,15 @@ class SlothMachine {
     play() {
         this._counter++;
 
-        const ruletas = [Math.random() >= 0.5, Math.random() >= 0.5, Math.random() >= 0.5];
+        const roulettes = [Math.random() >= 0.5, Math.random() >= 0.5, Math.random() >= 0.5];
 
-        console.log(`La ruleta tiene de resultado ${JSON.stringify(ruletas)}`);
+        console.log(`Roulette results: ${JSON.stringify(roulettes)}`);
 
-        const isWinning = ruletas.filter(ruleta => ruleta == false).length <= 0;
+        const isAWin = roulettes.filter(roulette => roulette == false).length <= 0;
 
         let message = "Good luck next time!!";
-        
-        if(isWinning) {
+
+        if(isAWin) {
             message = `Congratulations!!!. You won ${this._counter} coins!!`;
 
             this._counter = 0;
