@@ -8,6 +8,6 @@ const param3 = ['a','b','c'];
 const param4 = [true, false];
 
 
-console.log(`Resultado del operador concat con parámetros
+console.log(`- Resultado del operador concat con parámetros
  [${param1}], [${param2}], [${param3}], [${param4}]:
   ${concat(param1, param2, param3, param4)}`);
